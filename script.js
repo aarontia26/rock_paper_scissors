@@ -16,7 +16,7 @@ function start() {
 document.querySelectorAll(".playerPick").forEach(item =>{
     item.addEventListener('click', ()=>{
         console.log(start_)
-        if (start_ = 1) {
+        if (start_ == 1) {
             console.log("ITEM " + item.id)
             computerPick = Math.floor(Math.random() * 3);
             document.getElementById("userPick").innerHTML = "Pick: " + item.id.toUpperCase();
